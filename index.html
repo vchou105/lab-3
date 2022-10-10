@@ -14,7 +14,7 @@
   <header>
     <h1>CSE 110 Meeting Minutes</h1>
     <hr>
-    <img src="logo.png" alt="CSE 110 logo" width="150" />
+    <img src="logo.png" alt="CSE 110 logo" width="150">
     <nav>
       <ul>
         <li>
@@ -38,7 +38,7 @@
       <span>Here's a lofi song to listen to while working~ </span>
       <br>
       <audio controls>
-        <source src="Thaehan - Ocean.mp3" type="audio/mpeg">
+        <source src="Thaehan-Ocean.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
     </div>
@@ -48,7 +48,7 @@
       <h2>October 6, 2022 | 6:50pm @ WLH 2001</h2>
       <p>Meeting recording (if available):</p>
       <video width="300" controls>
-        <source src="sample space video.mp4" type="video/mp4">
+        <source src="sample_space_video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>
@@ -124,7 +124,7 @@
             <span>Is this meeting minutes confusing?</span>
             <input type="radio" value="yes" id="yes-confusing" name="confusing">
             <label for="yes-confusing">Yes ;(</label>
-            <input type="radio" value="no" id="no" name="confusing">
+            <input type="radio" value="no" id="no-confusing" name="confusing">
             <label for="no-confusing">No! :)</label>
             <p><label for="feedback">If yes, please provide feedback:</label></p>
             <textarea id="feedback" name="feedback" rows="5" cols="50"></textarea>
@@ -142,13 +142,13 @@
             </select>
             <br><br>
             <label for="next-date">Select a date you'd like our next meeting to be on:</label>
-            <input type="next-date">
+            <input type="next-date" name="next-date" id="next-date">
 
             <br><br>
             <label for="roles">Enter your preferred role: </label>
-            <input list="roles" name="role" id="role">
+            <input list="role-types" name="roles" id="roles">
 
-            <datalist id="roles">
+            <datalist id="role-types">
               <option value="Frontend developer">
               <option value="Backend developer">
               <option value="Designer">
