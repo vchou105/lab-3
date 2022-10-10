@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Meeting minutes sample content for CSE 110 lab 2.">
+  <meta property="og:title" content="CSE 110 Sample Meeting Minutes Layout">
+  <title>CSE 110 LAB 2</title>
+  <!-- <link rel="icon" type="image/png" href="https://maxst.icons8.com/vue-static/icon/favicon/icons8_fav_32×32.png"> -->
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <header>
+    <h1>CSE 110 Meeting Minutes</h1>
+    <hr>
+    <img src="logo.png" alt="CSE 110 logo" width="150" />
+    <nav>
+      <ul>
+        <li>
+          <a href="#date">Date & Recording</a>
+        </li>
+        <li>
+          <a href="#attendees">Attendees</a>
+        </li>
+        <li>
+          <a href="#agenda">Agenda</a>
+        </li>
+        <li>
+          <a href="#action">Action Items</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <div>
+      <span>Here's a lofi song to listen to while working~ </span>
+      <br>
+      <audio controls>
+        <source src="Thaehan - Ocean.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+    <br>
+
+    <section id="date">
+      <h2>October 6, 2022 | 6:50pm @ WLH 2001</h2>
+      <p>Meeting recording (if available):</p>
+      <video width="300" controls>
+        <source src="sample space video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="attendees">
+      <h2>Attendees</h2>
+      <h3>Present</h3>
+      <ul>
+        <li>Team Co-leads</li>
+        <li>Team Members</li>
+        <li>TA</li>
+      </ul>
+      <h3>Absent</h3>
+      <ul>
+        <li>None</li>
+      </ul>
+    </section>
+    <br>
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <h3>Introductions</h3>
+      <ul>
+        <li>
+          <i>name, year, major, <b>experiences(?)</b></i>
+        </li>
+      </ul>
+      <h3>Team Logistics</h3>
+      <ul>
+        <li>
+          <em>Roles</em> - flexible to switch as long as we coordinate throughout the quarter
+          <ul>
+            <li>Designer</li>
+            <li>Frontend developer</li>
+            <li>Backend developer</li>
+          </ul>
+        </li>
+        <li>
+          <em>Weekly / Daily stand-ups</em> - update each other on our progress
+        </li>
+        <li>
+          <em>Code reviews</em> - have at least 2~3 approvals before merging pull request
+        </li>
+        <li><strong>Quality over quantity.</strong></li>
+      </ul>
+      <h3>Q/A</h3>
+      <details>
+        <summary>What is the project about?</summary>
+        <p>More details will be revealed later; no finalized project yet.</p>
+      </details>
+    </section>
+    <br>
+    <section id="action">
+      <div>
+        <h2>Action Items</h2>
+        <ol>
+          <li>Set up slack workspace</li>
+          <li>Finalize on weekly meeting time</li>
+          <li>Create some form / sheet for our role preferences & experiences</li>
+        </ol>
+        <form id="form">
+          <fieldset>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <input type="checkbox" id="reviewed" name="reviewed">
+            <label for="reviewed">I have reviewed the meeting minutes info</label>
+            <br>
+            <input type="checkbox" id="attended" name="attended">
+            <label for="attended">I was present during the meeting</label>
+            <br><br>
+
+            <span>Is this meeting minutes confusing?</span>
+            <input type="radio" value="yes" id="yes-confusing" name="confusing">
+            <label for="yes-confusing">Yes ;(</label>
+            <input type="radio" value="no" id="no" name="confusing">
+            <label for="no-confusing">No! :)</label>
+            <p><label for="feedback">If yes, please provide feedback:</label></p>
+            <textarea id="feedback" name="feedback" rows="5" cols="50"></textarea>
+            <br><br>
+
+            <label for="day">Choose a day you prefer for a weekly meeting:</label>
+            <select name="day" id="day">
+              <option>Mon</option>
+              <option>Tues</option>
+              <option>Wed</option>
+              <option>Thurs</option>
+              <option>Fri</option>
+              <option>Sat</option>
+              <option>Sun</option>
+            </select>
+            <br><br>
+            <label for="next-date">Select a date you'd like our next meeting to be on:</label>
+            <input type="next-date">
+
+            <br><br>
+            <label for="roles">Enter your preferred role: </label>
+            <input list="roles" name="role" id="role">
+
+            <datalist id="roles">
+              <option value="Frontend developer">
+              <option value="Backend developer">
+              <option value="Designer">
+            </datalist>
+            <br><br>
+
+            <button type="submit" value="submit" form="form">Submit</button>
+          </fieldset>
+          <br>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2022</span>
+  </footer>
+</body>
+
+</html>
