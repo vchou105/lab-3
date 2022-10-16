@@ -1,2 +1,2 @@
-# Lab 2 - Starter
+# Lab 3
 https://vchou105.github.io/lab-3/
