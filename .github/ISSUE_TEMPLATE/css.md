@@ -1,5 +1,5 @@
 ---
-name: css
+name: CSS
 about: Styling changes to be added in external, inline, or internal stylesheets.
 title: "[CSS]"
 labels: styling
