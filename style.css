@@ -1,0 +1,146 @@
+body {
+    /* remove default padding and margin on page for background */
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header, main, footer {
+    padding: 1rem;
+}
+
+header {
+    background-color: oldlace;
+    /* background-color: lightyellow;  */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 30%;
+    padding: 10px 5px;
+    /* text-decoration: underline lightslategray; */
+
+    background-image: 
+    /* linear-gradient(to top, oldlace 50%, white 50%); */
+                    linear-gradient(to right bottom, white 50%, peachpuff 50%); 
+    /* background-size: 50% auto; */
+    border-style: solid;
+    border-color: wheat;
+}
+
+header hr {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+header img  {
+    border-radius: 5px;
+}
+
+header > div {
+    display: inline;
+    padding: 0 .5rem;
+    position: sticky;
+    
+}
+
+header nav:first-child, nav > ul {
+    display: inherit;
+}
+
+
+img#logo {
+    max-width: 150px;
+    width: 7vw;
+    min-width: 5vw;
+}
+
+nav {
+    display: inherit;
+    float: right;
+    position: inherit;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: .7rem 1.4rem;
+}
+
+nav ul li a {
+    color: initial;
+}
+
+nav ul li a:hover, 
+nav ul li a:active, 
+nav ul li a:focus {
+    color: steelblue;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+section#action h2,
+section#agenda h2,
+section#attendees h2,
+section#date h2 {
+    width: fit-content;
+    padding: 5pt 10pt;
+    background-color: hsla(45, 100%, 90%, 100%);
+}
+
+details {
+    background-color: snow;
+    padding: 0.5rem;
+    /* border-radius: 5px; */
+}
+
+details > summary + p {
+    text-indent: 4ch;
+}
+
+section#action {
+    background-color: azure;
+    background-color: lavender; 
+    border-radius: 5px;
+}
+
+section#action h2 {
+    background-color: lightsteelblue;
+    text-decoration: underline;
+}
+
+input[id=name] {
+    width: 30ch;
+}
+
+fieldset {
+    border-style: dashed;
+    border-width: .75mm;
+    border-color: steelblue;
+}
+
+footer {
+    background-color: #fcf7ed;
+    height: 4vh;
+}
+
+footer > span {
+    margin: 2em 1em;
+}
