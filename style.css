@@ -11,21 +11,21 @@ body {
     margin-right: 0;
 }
 
-header, main, footer {
-    padding: 1rem;
+header, section, footer {
+    padding: 1.5rem;
 }
 
 header {
     background-color: oldlace;
-    /* background-color: lightyellow;  */
     border-radius: 5px;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     padding: 2rem 1rem 1rem 1rem;
 }
 
 header h1 {
     text-align: center;
-    margin: 0 30%;
+    width: fit-content;
+    margin: auto;
     padding: 10px 5px;
     /* text-decoration: underline lightslategray; */
 
@@ -39,19 +39,12 @@ header h1 {
 
 header hr {
     margin-top: 2rem;
-    margin-bottom: 1.5rem;
 }
 
 header img  {
     border-radius: 5px;
 }
 
-header > div {
-    display: inline;
-    padding: 0 .5rem;
-    position: sticky;
-    
-}
 
 header nav:first-child, nav > ul {
     display: inherit;
@@ -88,7 +81,7 @@ nav ul li a {
 nav ul li a:hover, 
 nav ul li a:active, 
 nav ul li a:focus {
-    color: steelblue;
+    color: slategray;
     font-weight: bold;
 }
 
@@ -105,8 +98,39 @@ section#date h2 {
     background-color: hsla(45, 100%, 90%, 100%);
 }
 
+.sticky-nav {
+    /* display: inline; */
+    /* padding: 0 .5rem; */
+    /* background-color: rgba(255, 218, 185, 0.3); */
+    position: sticky;
+    top: 0;
+}
+
+.nav-background, #audio {
+    padding: 0.8rem;
+}
+
+.nav-background {
+    background-image: linear-gradient(to bottom, oldlace 50%, rgba(255, 255, 255, 0.2));
+    padding-bottom: 0;
+}
+
+/* dipslay audio on the right */
+#audio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    position: relative;
+    padding: 0;
+    padding-right: 1.5rem;
+}
+
 span ~ audio {
     margin-top: 1ch;
+    filter: sepia(100%) drop-shadow(4px 6px 6px wheat);
 }
 
 #attendees h3 {
@@ -169,6 +193,10 @@ section#action h2 {
 
 input[id=name] {
     width: 30ch;
+}
+
+form {
+    margin: 0 1.5rem;
 }
 
 fieldset {
